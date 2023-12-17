@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start; /* Mude de 'space-between' para 'flex-start' */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.8em;
+  color: orangered;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+    text-align: left;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.navigation a:hover {
+  color: rgb(255, 94, 1);
+  border-radius: 100px;
+  transition: 0.7s ease;
+  display: inline-block;
+
+}
+section {
+  padding: 100px 200px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(img/kobe24.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: orangered;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.main h2 span {
+  display: inline-block;
+  margin: top 10px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.main h3 {
+  color: rgb(230, 230, 230);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin: bottom 40px;
+}
+.main-button {
+  color: gray;
+  background-color: orangered;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+.main-button:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.1, 1.1);
+}
+.social-icons a {
+  color: orangered;
+  font-size: 1.7em;
+  padding: 0.4em;
+}
+.social-icons a:hover {
+  color: rgb(109, 63, 63);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: orangered;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin: bottom 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nonewrap;
+}
+
+.card {
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 /50%);
+  border-inline: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon {
+  text-align: center;
+}
+.jordan4 {
+  width: 100%;
+}
+
+.info h3 {
+  color: orangered;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.Albums {
+  background-color: rgb(6, 69, 240);
+}
+
+.Albums .content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Albums-card {
+  background-color: white;
+  border: 1px solid rgb(128, 120, 117);
+  min-height: 100px;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.Albums-card:hover {
+  transform: scale(1.1);
+}
+.Albums-card:hover .Albums-image {
+  opacity: 0.9;
+}
+
+.Albums-image img {
+  width: 100%;
+}
+.Albums-info {
+  padding: 1em;
+}
+
+.Albums-category {
+  font-size: 0.8em;
+  color: black;
+}
+
+.Albums-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 6px;
+  color: orangered;
+}
+
+.more-details {
+  text-decoration: none;
+  color: black;
+}
+.more-details:hover {
+  color: orangered;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title .span {
+  color: orangered;
+}
+
+.footer .social-icons {
+  font-size: 1.7em;
+  padding: 0.4em;
+}
+
+.info .a {
+  text-decoration: none;
+}
+
+/* Estilos padrão para computadores */
+body {
+  font-size: 16px;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .main {
+    padding: 80px 20px;
+  }
+
+  .cards .content,
+  .Albums .content,
+  .contact .content {
+    flex-direction: column;
+  }
+
+  .card,
+  .Albums-card,
+  .contact .card {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .footer {
+    padding: 1em;
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 10px 10px;
+  }
+
+  .main {
+    padding: 60px 10px;
+  }
+
+  .cards .content,
+  .Albums .content,
+  .contact .content {
+    flex-direction: column;
+  }
+
+  .card,
+  .Albums-card,
+  .contact .card {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .footer {
+    padding: 0.5em;
+  }
+}
+    /* Adicione estilos específicos para telas menores aqui */
+    @media screen and (max-width: 768px) {
+        /* ... (seus estilos anteriores) */
+
+        .cards .content {
+            flex-direction: column; /* Altere a direção para coluna em telas menores */
+            align-items: center; /* Centralize os itens na coluna */
+        }
+
+        .card {
+            width: 100%; /* Faça as cartas ocuparem toda a largura */
+            margin: 15px 0; /* Adicione algum espaço entre as cartas */
+            text-align: center; /* Centralize o texto */
+        }
+
+        .card .icon img {
+            width: 100%; /* Faça as imagens ocuparem toda a largura */
+        }
+
+        .info h3 {
+            font-size: 1.2em; /* Ajuste o tamanho da fonte nos títulos */
+        }
+
+        .info p {
+            font-size: 1em; /* Ajuste o tamanho da fonte nos textos */
+        }
+    }
+
